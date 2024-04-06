@@ -11,10 +11,10 @@ import net.minecraft.util.Identifier;
 import net.playerxess.smorestuff.SmoreStuff;
 import net.minecraft.item.Item;
 public class ModItems {
-    public static final Item SMORE = registerItem("smore", new Item(new FabricItemSettings()));
+    public static final Item TRADSMORE = registerItem("traditional_smore", new Item(new FabricItemSettings().food(ModFoodComponents.TRADSMORE)));
     public static final Item MARSHMALLOW = registerItem("marshmallow", new Item(new FabricItemSettings()));
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
-        entries.add(SMORE);
+        entries.add(TRADSMORE);
         entries.add(MARSHMALLOW);
     }
 
@@ -24,8 +24,7 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        SmoreStuff.LOGGER.info(("Registering Mod Items for " +SmoreStuff.MOD_ID ));
+        SmoreStuff.LOGGER.info(("Registering Mod Items for " + SmoreStuff.MOD_ID ));
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientTabItemGroup);
     }
 }

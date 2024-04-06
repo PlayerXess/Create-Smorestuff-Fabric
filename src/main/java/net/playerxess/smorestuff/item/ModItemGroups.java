@@ -13,8 +13,8 @@ public class ModItemGroups {
     public static final ItemGroup SMORE_STUFF = Registry.register(Registries.ITEM_GROUP,
             new Identifier(SmoreStuff.MOD_ID, "smore"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.smore"))
-                    .icon(() -> new ItemStack(ModItems.SMORE)). entries((displayContext, entries) -> {
-                        entries.add(ModItems.SMORE);
+                    .icon(() -> new ItemStack(ModItems.TRADSMORE)). entries((displayContext, entries) -> {
+                        entries.add(ModItems.TRADSMORE);
                         entries.add(ModItems.MARSHMALLOW);
 
                     }).build());
