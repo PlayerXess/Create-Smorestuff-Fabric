@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "smorestuff",
+	"version": "${version}",
+	"name": "SmoreStuff",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/smorestuff/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.playerxess.smorestuff.SmoreStuff"
+		],
+		"client": [
+			"net.playerxess.smorestuff.SmoreStuffClient"
+		],
+		"fabric-datagen": [
+			"net.playerxess.smorestuff.SmoreStuffDataGenerator"
+		]
+	},
+	"mixins": [
+		"smorestuff.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.9",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
