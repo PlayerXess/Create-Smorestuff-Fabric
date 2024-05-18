@@ -1,0 +1,21 @@
+{
+  "type": "minecraft_crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "   ",
+    " # ",
+    "   "
+  ],
+
+  "key": {
+    "#": {
+      "item": "smorestuff:marshmallow"
+    }
+  },
+  "results": [
+    {
+      "item": "smorestuff:traditional_smore",
+      "count": 1
+    }
+  ]
+}
