@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "smorestuff",
 	"version": "${version}",
-	"name": "PlayerXess' Create: SmoreStuff",
+	"name": "Create: SmoreStuff",
 	"description": "Adds S'more Stuff",
 	"authors": [
 		"PlayerXess"
@@ -32,12 +32,12 @@
     "minecraft": "~1.20.1",
     "java": ">=17",
     "fabricloader": ">=0.15.11",
-		"fabric-api": ">=0.92.1+1.20.1",
-		"create": ">=0.5.1-f-build.1417+mc1.20.1"
+	"fabric-api": ">=0.92.1+1.20.1",
+	"create": ">=0.5.1-f-build.1417+mc1.20.1"
 	},
 	"suggests": {
-		"rei": ">=12.1.725",
-		"lazydfu": ">=0.1.3",
+	"rei": ">=12.1.725",
+	"lazydfu": ">=0.1.3",
     "modmenu": ">=7.2.2"
 	}
 }

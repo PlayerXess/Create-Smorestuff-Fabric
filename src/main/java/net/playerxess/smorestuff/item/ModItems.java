@@ -8,9 +8,12 @@ import net.playerxess.smorestuff.SmoreStuff;
 import net.minecraft.item.Item;
 
 public class ModItems {
-    public static final Item TRADITIONALSMORE = registerItem("traditional_smore", new Item(new FabricItemSettings().food(ModFoodComponents.TRADITIONALSMOREFOOD)));
     public static final Item MARSHMALLOW = registerItem("marshmallow", new Item(new FabricItemSettings()));
-
+	public static final Item PRESSED_DOUGH = registerItem("pressed_dough", new Item(new FabricItemSettings()));
+	public static final Item CRACKER = registerItem("cracker", new Item(new FabricItemSettings().food(ModFoodComponents.CRACKERFOOD)));
+	public static final Item GRAHAMCRACKER = registerItem("graham_cracker", new Item(new FabricItemSettings()));
+	public static final Item RAWTRADITIONALSMORE = registerItem("raw_traditional_smore", new Item(new FabricItemSettings()));
+	public static final Item TRADITIONALSMORE = registerItem("traditional_smore", new Item(new FabricItemSettings().food(ModFoodComponents.TRADITIONALSMOREFOOD)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(SmoreStuff.MOD_ID, name), item);

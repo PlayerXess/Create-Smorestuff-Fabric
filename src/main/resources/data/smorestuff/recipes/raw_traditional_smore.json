@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GGG",
+    "MCM",
+    "GGG"
+  ],
+  "key": {
+    "M": {
+      "item": "smorestuff:marshmallow"
+    },
+    "G": {
+      "item": "smorestuff:graham_cracker"
+    },
+    "C": {
+      "item": "create:bar_of_chocolate"
+    }
+  },
+  "result": {
+    "item": "smorestuff:raw_traditional_smore"
+  }
+}

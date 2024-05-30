@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 600,
+  "experience": 0.0,
+  "ingredient": {
+    "item": "smorestuff:pressed_dough"
+  },
+  "result": "smorestuff:cracker"
+}

@@ -85,7 +85,7 @@ processResources {
 
 machete {
 	// disable machete locally for faster builds
-	enabled = buildNumber != null
+	enabled = true
 }
 
 tasks.withType(JavaCompile).configureEach {

@@ -14,8 +14,12 @@ public class ModItemGroups {
             new Identifier(SmoreStuff.MOD_ID, "smore"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.smore"))
                     .icon(() -> new ItemStack(ModItems.TRADITIONALSMORE)). entries((displayContext, entries) -> {
-                        entries.add(ModItems.TRADITIONALSMORE);
                         entries.add(ModItems.MARSHMALLOW);
+						entries.add(ModItems.PRESSED_DOUGH);
+						entries.add(ModItems.CRACKER);
+						entries.add(ModItems.GRAHAMCRACKER);
+						entries.add(ModItems.RAWTRADITIONALSMORE);
+						entries.add(ModItems.TRADITIONALSMORE);
 
                     }).build());
 
