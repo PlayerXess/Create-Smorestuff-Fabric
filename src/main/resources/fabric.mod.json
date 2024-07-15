@@ -22,7 +22,7 @@
 			"net.playerxess.smorestuff.SmoreStuffClient"
 		],
 		"fabric-datagen": [
-			"net.playerxess.smorestuff.SmoreStuffDataGenerator"
+			"net.playerxess.smorestuff.SmorestuffDataGenerator"
 		]
 	},
 	"mixins": [

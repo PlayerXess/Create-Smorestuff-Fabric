@@ -1,0 +1,16 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "smorestuff:raw_smore"
+    },
+    {
+      "item": "smorestuff:marshmallow"
+    }
+  ],
+  "results": [
+    {
+      "item": "smorestuff:raw_marshmallowey_smore"
+    }
+  ]
+}

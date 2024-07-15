@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 600,
+  "experience": 0.0,
+  "ingredient": {
+    "item": "smorestuff:raw_marshmallowey_smore"
+  },
+  "result": "smorestuff:marshmallowey_smore"
+}

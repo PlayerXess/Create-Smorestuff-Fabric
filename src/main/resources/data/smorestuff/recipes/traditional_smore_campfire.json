@@ -4,7 +4,7 @@
   "cookingtime": 600,
   "experience": 0.0,
   "ingredient": {
-    "item": "smorestuff:raw_traditional_smore"
+    "item": "smorestuff:raw_smore"
   },
   "result": "smorestuff:traditional_smore"
 }

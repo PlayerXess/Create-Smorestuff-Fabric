@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "smorestuff:raw_smore"
+    },
+    {
+      "amount": 5400,
+      "fluid": "create:chocolate",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "smorestuff:raw_chocolatey_smore"
+    }
+  ]
+}

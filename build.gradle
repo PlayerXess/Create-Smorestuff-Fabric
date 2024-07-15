@@ -83,6 +83,10 @@ processResources {
 	}
 }
 
+fabricApi {
+    configureDataGeneration()
+}
+
 machete {
 	// disable machete locally for faster builds
 	enabled = true

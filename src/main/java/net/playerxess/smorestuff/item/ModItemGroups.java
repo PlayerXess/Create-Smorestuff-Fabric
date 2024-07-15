@@ -18,12 +18,16 @@ public class ModItemGroups {
 						entries.add(ModItems.PRESSED_DOUGH);
 						entries.add(ModItems.CRACKER);
 						entries.add(ModItems.GRAHAMCRACKER);
-						entries.add(ModItems.RAWTRADITIONALSMORE);
+						entries.add(ModItems.RAWSMORE);
 						entries.add(ModItems.TRADITIONALSMORE);
+						entries.add(ModItems.RAWCHOCOLATEYSMORE);
+						entries.add(ModItems.CHOCOLATEYSMORE);
+						entries.add(ModItems.RAWMARSHMALLOWEYSMORE);
+						entries.add(ModItems.MARSHMALLOWEYSMORE);
 
                     }).build());
 
     public static void registerItemGroups() {
-        SmoreStuff.LOGGER.info("Registering Item Groups for " +SmoreStuff.MOD_ID);
+        SmoreStuff.LOGGER.info("Registering Item Groups for Create: Smorestuff");
     }
 }

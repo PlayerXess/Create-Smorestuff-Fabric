@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "smorestuff:item/raw_traditional_smore"
+    "layer0": "smorestuff:item/chocolatey_smore"
   }
 }
