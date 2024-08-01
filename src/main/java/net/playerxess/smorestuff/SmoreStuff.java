@@ -3,6 +3,8 @@ package net.playerxess.smorestuff;
 import net.fabricmc.api.ModInitializer;
 import net.playerxess.smorestuff.item.ModItemGroups;
 import net.playerxess.smorestuff.item.ModItems;
+import net.playerxess.smorestuff.block.ModBlocks;
+import net.playerxess.smorestuff.fluid.ModFluids;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,5 +19,7 @@ public class SmoreStuff implements ModInitializer {
 
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModFluids.registerModFluids();
 	}
 }

@@ -8,6 +8,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.playerxess.smorestuff.SmoreStuff;
+import net.playerxess.smorestuff.fluid.ModFluids;
+import net.playerxess.smorestuff.block.ModBlocks;
 
 public class ModItemGroups {
     public static final ItemGroup SMORE_STUFF = Registry.register(Registries.ITEM_GROUP,
@@ -24,10 +26,11 @@ public class ModItemGroups {
 						entries.add(ModItems.CHOCOLATEYSMORE);
 						entries.add(ModItems.RAWMARSHMALLOWEYSMORE);
 						entries.add(ModItems.MARSHMALLOWEYSMORE);
+						entries.add(ModBlocks.LIQUID_MARSHMALLOW);
 
                     }).build());
 
     public static void registerItemGroups() {
-        SmoreStuff.LOGGER.info("Registering Item Groups for Create: Smorestuff");
+        SmoreStuff.LOGGER.info("Registering Item Groups For Mod Create: Smorestuff");
     }
 }
