@@ -9,12 +9,10 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.playerxess.smorestuff.SmoreStuff;
-import net.playerxess.smorestuff.fluid.ModFluids;
-import net.playerxess.smorestuff.fluid.LiquidMarshmallow;
 
 public class ModBlocks {
 
-	public static final Block LIQUID_MARSHMALLOW = register(new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.GRASS).liquid()),"liquid_marshmallow",true);
+
 
 
 
