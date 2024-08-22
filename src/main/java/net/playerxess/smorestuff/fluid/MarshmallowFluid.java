@@ -17,10 +17,7 @@ import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 public abstract class MarshmallowFluid extends FlowableFluid {
 
-    @Override
-    protected boolean isInfinite() {
-        return false;
-    }
+
 
     @Override
     protected void beforeBreakingBlock(WorldAccess world, BlockPos pos, BlockState state) {
@@ -88,7 +85,7 @@ public abstract class MarshmallowFluid extends FlowableFluid {
         return false;
     }
 
-    public static class Flowing extends MarshmallowFluid {
+    public abstract class Flowing extends MarshmallowFluid {
         @Override
         protected void appendProperties(StateManager.Builder<Fluid, FluidState> builder) {
             super.appendProperties(builder);
@@ -104,6 +101,11 @@ public abstract class MarshmallowFluid extends FlowableFluid {
         public boolean isStill(FluidState state) {
             return false;
         }
+
+		@Override
+    	protected boolean isInfinite(World world) {
+        	return false;
+    	}
     }
 
     public static class Still extends MarshmallowFluid {
@@ -116,6 +118,11 @@ public abstract class MarshmallowFluid extends FlowableFluid {
         public boolean isStill(FluidState state) {
             return true;
         }
+
+		@Override
+    	protected boolean isInfinite(World world) {
+        	return false;
+    	}
     }
 
 }

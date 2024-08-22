@@ -30,11 +30,9 @@ public class ModFluids {
                 new Identifier(SmoreStuff.MOD_ID, "flowing_marshmallow"), new MarshmallowFluid.Flowing());
 
         FLUID_MARSHMALLOW_BLOCK = Registry.register(Registries.BLOCK, new Identifier(SmoreStuff.MOD_ID, "fluid_marshmallow_block"),
-                new FluidBlock(ModFluids.MARSHMALLOW_STILL, FabricBlockSettings.copyOf(Blocks.WATER)){ });
+                new FluidBlock(ModFluids.MARSHMALLOW_STILL, FabricBlockSettings.copyOf(Blocks.field_10382)){ });
         MARSHMALLOW_BUCKET = Registry.register(Registries.ITEM, new Identifier(SmoreStuff.MOD_ID, "marshmallow_bucket"),
-                new BucketItem(ModFluids.MARSHMALLOW_STILL, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
-
-        ItemGroupEvents.modifyEntriesEvent(ModItemGroups.SMORE_STUFF).register(entries -> entries.add(MARSHMALLOW_BUCKET));
+                new BucketItem(ModFluids.MARSHMALLOW_STILL, new FabricItemSettings().recipeRemainder(Items.field_8550).maxCount(1)));
     }
 
 }

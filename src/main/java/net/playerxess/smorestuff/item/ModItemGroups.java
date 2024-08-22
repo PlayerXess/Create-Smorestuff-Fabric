@@ -26,6 +26,7 @@ public class ModItemGroups {
 						entries.add(ModItems.CHOCOLATEYSMORE);
 						entries.add(ModItems.RAWMARSHMALLOWEYSMORE);
 						entries.add(ModItems.MARSHMALLOWEYSMORE);
+						entries.add(ModFluids.MARSHMALLOW_BUCKET);
 
                     }).build());
 
