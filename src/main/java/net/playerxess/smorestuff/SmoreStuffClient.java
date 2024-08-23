@@ -13,7 +13,7 @@ FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.MARSHMALLOW_STILL, ModFlu
                 new SimpleFluidRenderHandler(
                         new Identifier("minecraft:block/water_still"),
                         new Identifier("minecraft:block/water_flow"),
-                        0xA1E038D0
+                        0xFFFFFF
                 ));
     }
 }

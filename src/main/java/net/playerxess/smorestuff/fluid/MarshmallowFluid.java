@@ -16,9 +16,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 public abstract class MarshmallowFluid extends FlowableFluid {
-
-
-
+	
     @Override
     protected void beforeBreakingBlock(WorldAccess world, BlockPos pos, BlockState state) {
         final BlockEntity blockEntity = state.hasBlockEntity() ? world.getBlockEntity(pos) : null;
@@ -85,7 +83,7 @@ public abstract class MarshmallowFluid extends FlowableFluid {
         return false;
     }
 
-    public abstract class Flowing extends MarshmallowFluid {
+    public static class Flowing extends MarshmallowFluid {
         @Override
         protected void appendProperties(StateManager.Builder<Fluid, FluidState> builder) {
             super.appendProperties(builder);
