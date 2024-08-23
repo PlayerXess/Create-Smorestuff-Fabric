@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 public abstract class MarshmallowFluid extends FlowableFluid {
-	
+
     @Override
     protected void beforeBreakingBlock(WorldAccess world, BlockPos pos, BlockState state) {
         final BlockEntity blockEntity = state.hasBlockEntity() ? world.getBlockEntity(pos) : null;
@@ -25,7 +25,7 @@ public abstract class MarshmallowFluid extends FlowableFluid {
 
     @Override
     protected int getFlowSpeed(WorldView world) {
-        return 2;
+        return 10;
     }
 
     @Override
@@ -45,7 +45,7 @@ public abstract class MarshmallowFluid extends FlowableFluid {
 
     @Override
     public int getTickRate(WorldView world) {
-        return 5;
+        return 2;
     }
 
     @Override
