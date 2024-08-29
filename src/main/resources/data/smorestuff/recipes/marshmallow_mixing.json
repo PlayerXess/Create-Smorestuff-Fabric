@@ -14,5 +14,6 @@
     {
       "item": "smorestuff:marshmallow"
     }
-  ]
+  ],
+  "heatRequirement": "heated"
 }
