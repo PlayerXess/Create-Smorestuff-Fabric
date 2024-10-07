@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "got_s'more": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "smorestuff:traditional_smore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:src/main/resources/assets/smorestuff/textures/item/traditional_smore.png",
+    "description": {
+      "text": "Make Your First Traditional S'more"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "smorestuff:traditional_smore"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "A Taste Of Tradition"
+    }
+  },
+  "requirements": [
+    [
+      "got_s'more"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

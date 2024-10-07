@@ -15,10 +15,8 @@ public class ModItems {
 	public static final Item GRAHAMCRACKER = registerItem("graham_cracker", new Item(new FabricItemSettings()));
 	public static final Item RAWSMORE = registerItem("raw_smore", new Item(new FabricItemSettings()));
 	public static final Item TRADITIONALSMORE = registerItem("traditional_smore", new Item(new FabricItemSettings().food(ModFoodComponents.TRADITIONALSMOREFOOD)));
-	public static final Item RAWCHOCOLATEYSMORE = registerItem("raw_chocolatey_smore", new Item(new FabricItemSettings()));
 	public static final Item CHOCOLATEYSMORE = registerItem("chocolatey_smore", new Item(new FabricItemSettings().food(ModFoodComponents.CHOCOLATEYSMOREFOOD)));
 	public static final Item BUCKET_OF_MARSHMALLOW = registerItem("bucket_of_marshmallow", new BucketItem(ModFluids.MARSHMALLOW_STILL, new FabricItemSettings().maxCount(1)));
-	public static final Item RAWMARSHMALLOWEYSMORE = registerItem("raw_marshmallowey_smore", new Item(new FabricItemSettings()));
 	public static final Item MARSHMALLOWEYSMORE = registerItem("marshmallowey_smore", new Item(new FabricItemSettings().food(ModFoodComponents.CHOCOLATEYSMOREFOOD)));
 
     private static Item registerItem(String name, Item item) {

@@ -13,7 +13,8 @@ import net.minecraft.util.Identifier;
 import net.playerxess.smorestuff.item.ModItems;
 
 public class AdvancementsProvider extends FabricAdvancementProvider {
-	protected AdvancementsProvider(FabricDataOutput dataGenerator) {
+
+	public AdvancementsProvider(FabricDataOutput dataGenerator) {
 		super(dataGenerator);
 	}
 
@@ -21,7 +22,7 @@ public class AdvancementsProvider extends FabricAdvancementProvider {
     public void generateAdvancement(Consumer<Advancement> consumer) {
         Advancement rootAdvancement = Advancement.Builder.create()
                 .display(
-                        Items.DIRT, // The display icon
+                        ModItems.TRADITIONALSMORE, // The display icon
                         Text.literal("A Taste Of Tradition"), // The title
                         Text.literal("Make Your First Traditional S'more"), // The description
                         new Identifier("src/main/resources/assets/smorestuff/textures/item/traditional_smore.png"), // Background image used
@@ -31,7 +32,7 @@ public class AdvancementsProvider extends FabricAdvancementProvider {
                         false // Hidden in the advancement tab
                 )
                 // The first string used in criterion is the name referenced by other advancements when they want to have 'requirements'
-                .criterion("got_dirt", InventoryChangedCriterion.Conditions.items(ModItems.TRADITIONALSMORE))
+                .criterion("got_s'more", InventoryChangedCriterion.Conditions.items(ModItems.TRADITIONALSMORE))
                 .build(consumer, "smorestuff" + "/root");
     }
 }

@@ -22,9 +22,7 @@ public class ModItemGroups {
 						entries.add(ModItems.GRAHAMCRACKER);
 						entries.add(ModItems.RAWSMORE);
 						entries.add(ModItems.TRADITIONALSMORE);
-						entries.add(ModItems.RAWCHOCOLATEYSMORE);
 						entries.add(ModItems.CHOCOLATEYSMORE);
-						entries.add(ModItems.RAWMARSHMALLOWEYSMORE);
 						entries.add(ModItems.MARSHMALLOWEYSMORE);
 						entries.add(ModFluids.MARSHMALLOW_BUCKET);
 

@@ -12,7 +12,9 @@
   ],
   "results": [
     {
-      "item": "smorestuff:marshmallow"
+      "amount": 5400,
+      "fluid": "smorestuff:fluid_marshmallow",
+      "nbt": {}
     }
   ],
   "heatRequirement": "heated"

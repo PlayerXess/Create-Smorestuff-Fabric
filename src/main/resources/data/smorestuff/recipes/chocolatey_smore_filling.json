@@ -2,17 +2,17 @@
   "type": "create:filling",
   "ingredients": [
     {
-      "item": "smorestuff:raw_smore"
+      "item": "smorestuff:traditional_smore"
     },
     {
-      "amount": 5400,
+      "amount": 2250,
       "fluid": "create:chocolate",
       "nbt": {}
     }
   ],
   "results": [
     {
-      "item": "smorestuff:raw_chocolatey_smore"
+      "item": "smorestuff:chocolatey_smore"
     }
   ]
 }
