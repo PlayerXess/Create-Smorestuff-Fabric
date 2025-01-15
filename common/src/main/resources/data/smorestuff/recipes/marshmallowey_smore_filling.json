@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "smorestuff:traditional_smore"
+    },
+    {
+      "amount": 2450,
+      "fluid": "smorestuff_liquid_marshmallow",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "smorestuff:marshmallowey_smore"
+    }
+  ]
+}

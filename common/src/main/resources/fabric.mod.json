@@ -1,0 +1,46 @@
+{
+	"schemaVersion": 1,
+	"id": "smorestuff",
+	"version": "${version}",
+	"name": "Create: SmoreStuff",
+	"description": "Adds S'more Stuff",
+	"authors": [
+		"PlayerXess"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/smorestuff/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.playerxess.smorestuff.SmoreStuff"
+		],
+		"client": [
+			"net.playerxess.smorestuff.SmoreStuffClient"
+		],
+		"fabric-datagen": [
+			"net.playerxess.smorestuff.SmoreStuffDataGenerator"
+		]
+	},
+	"mixins": [
+		"smorestuff.mixins.json"
+	],
+	"depends": {
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabricloader": ">=0.15.11",
+	"fabric-api": ">=0.92.1+1.20.1",
+	"create": [
+    ">=0.5.1-f-build.1417+mc1.20.1",
+    ">=0.5.1.f-build.1417+mc1.20.1"
+]
+	},
+	"suggests": {
+	"rei": ">=12.1.725",
+	"lazydfu": ">=0.1.3",
+    "modmenu": ">=7.2.2"
+	}
+}

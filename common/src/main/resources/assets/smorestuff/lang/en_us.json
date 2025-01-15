@@ -1,0 +1,19 @@
+{
+  "item.smorestuff.honeycomb_frame": "Honeycomb Frame",
+  "item.smorestuff.clump_of_honey": "Clump Of Honey",
+  "block.smorestuff.fluid_marshmallow": "Liquid Marshmallow",
+  "item.smorestuff.marshmallow_bucket": "Marshmallow Bucket",
+  "item.smorestuff.marshmallow": "Marshmallow",
+  "item.smorestuff.pressed_dough": "Pressed Dough",
+  "item.smorestuff.cracker": "Cracker",
+  "item.smorestuff.graham_cracker": "Graham Cracker",
+  "item.smorestuff.raw_smore": "Raw S'more",
+  "item.smorestuff.traditional_smore": "Traditional S'more",
+  "item.smorestuff.raw_chocolatey_smore": "Raw Chocolatey S'more",
+  "item.smorestuff.chocolatey_smore": "Chocolatey S'more",
+  "item.smorestuff.raw_marshmallowey_smore": "Raw Marshmallowey S'more",
+  "item.smorestuff.marshmallowey_smore": "Marshmallowey S'more",
+  "tooltip.smorestuff.traditional_smore_tooltip.tooltip": "Ye Old Traditional S'more",
+
+  "itemgroup.smorestuff": "SmoreStuff"
+}

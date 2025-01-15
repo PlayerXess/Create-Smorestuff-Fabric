@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "smorestuff:honeycomb_frame"
+    },
+    {
+      "amount": 5400,
+      "fluid": "create:honey",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:honeycomb"
+    }
+  ]
+}
