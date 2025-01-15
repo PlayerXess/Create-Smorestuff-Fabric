@@ -12,7 +12,14 @@
   ],
   "results": [
     {
+<<<<<<< HEAD:common/src/main/resources/data/smorestuff/recipes/clump_of_honey_mixing.json
       "item": "smorestuff:clump_of_honey"
+=======
+      "amount": 5400,
+      "fluid": "smorestuff:fluid_marshmallow",
+      "nbt": {}
+>>>>>>> 766d5d66001f9bea966b6bf98f20c3db08d5a53a:src/main/resources/data/smorestuff/recipes/marshmallow_mixing.json
     }
-  ]
+  ],
+  "heatRequirement": "heated"
 }
