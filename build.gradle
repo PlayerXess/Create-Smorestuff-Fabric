@@ -24,7 +24,7 @@ allprojects {
         // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
         // See https://docs.gradle.org/current/userguide/declaring_repositories.html
         // for more information about repositories.
-        
+
         maven { url = "https://maven.shedaniel.me/" } // Cloth Config, REI
 	    maven { url = "https://maven.parchmentmc.org" } // Parchment mappings
 	    maven { url = "https://api.modrinth.com/maven" } // LazyDFU
@@ -39,7 +39,7 @@ allprojects {
 
     forgix {
         group = "net.playerxess.smorestuff"
-        mergedJarName = "create-smorestuff-${mod_version}-${minecraft_version}"
+        mergedJarName = "create-smorestuff-${mod_version}-${minecraft_version}.jar"
     }
 
 }
@@ -113,7 +113,7 @@ subprojects {
 
     forgix {
         group = "net.playerxess.smorestuff"
-        mergedJarName = "create-smorestuff-${mod_version}-${minecraft_version}"
+        mergedJarName = "create-smorestuff-${mod_version}-${minecraft_version}.jar"
     }
 
     build.finalizedBy(mergeJars)
