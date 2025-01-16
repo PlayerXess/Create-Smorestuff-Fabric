@@ -39,7 +39,7 @@ allprojects {
 
     forgix {
         group = "net.playerxess.smorestuff"
-        mergedJarName = "create-smorestuff-${mod_version}-${minecraft_version}"
+        mergedJarName = "create-smorestuff-${mod_version}-${minecraft_version}.jar"
     }
 
 }
@@ -102,7 +102,7 @@ subprojects {
 
     forgix {
         group = "net.playerxess.smorestuff"
-        mergedJarName = "create-smorestuff-${mod_version}-${minecraft_version}"
+        mergedJarName = "create-smorestuff-${mod_version}-${minecraft_version}.jar"
     }
 
     build.finalizedBy(mergeJars)
