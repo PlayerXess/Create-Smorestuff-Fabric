@@ -35,7 +35,15 @@ repositories {
     maven { url = "https://maven.parchmentmc.org" } // Parchment mappings
     maven { url = "https://api.modrinth.com/maven" } // LazyDFU
     maven { url = "https://maven.terraformersmc.com/releases/" } // Mod Menu
-    maven { url = "https://mvn.devos.one/snapshots/" } // Create, Porting Lib, Forge Tags, Milk Lib, Registrate
+    maven { url = "https://mvn.devos.one/#/snapshots/" } // Create, Porting Lib, Forge Tags, Milk Lib, Registrate
+	maven {
+        url = uri("https://maven.tterrag.com/")
+        content {
+            includeGroup("com.simibubi.create")
+            includeGroup("com.jozufozu.flywheel")
+            includeGroup("com.tterrag.registrate")
+        }
+    }
     maven { url = "https://mvn.devos.one/releases/" } // Porting Lib Releases
     maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" } // Forge Config API Port
     maven { url = "https://maven.jamieswhiteshirt.com/libs-release" } // Reach Entity Attributes
@@ -49,8 +57,10 @@ dependencies {
     // Architectury API. This is optional, and you can comment it out if you don't need it.
     modImplementation "dev.architectury:architectury-forge:$rootProject.architectury_api_version"
 
-	// Create - dependencies are added transitively
-	modImplementation "com.simbubi.create:create-${rootProject.create_forge_version}"
+	// Create & Dependencies
+    modCompileOnly("com.tterrag.registrate:Registrate:${rootProject.registrate_version}")
+    modImplementation("com.simibubi.create:create-${rootProject.minecraft_version}:${rootProject.create_forge_version}:slim") { transitive = false }
+    modImplementation("com.jozufozu.flywheel:flywheel-forge-${rootProject.minecraft_version}:${rootProject.flywheel_version}")
 
 	// Development QOL
 	modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-forge:$rootProject.rei_forge_version"
