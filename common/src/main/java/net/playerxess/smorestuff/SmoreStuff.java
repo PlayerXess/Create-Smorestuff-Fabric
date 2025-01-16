@@ -14,6 +14,7 @@ public class SmoreStuff implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		SmoreStuff.LOGGER.info("Hello From Smorestuff! Thank You For Downloading And Enjoy!");
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
@@ -21,6 +22,7 @@ public class SmoreStuff implements ModInitializer {
 	}
 
 	public static void init() {
-		SmoreStuff.LOGGER.info("Hello From Smorestuff! Thank You For Downloading And Enjoy!");
+		SmoreStuff smoreStuff = new SmoreStuff();
+        smoreStuff.onInitialize();
 	}
 }

@@ -1,5 +1,6 @@
 plugins {
     id 'com.github.johnrengelman.shadow'
+	id 'io.github.p03w.machete'
 }
 
 loom {
@@ -44,6 +45,7 @@ repositories {
             includeGroup("com.tterrag.registrate")
         }
     }
+	maven { url = "https://maven.su5ed.dev/releases"} //Forgified Fabric API
     maven { url = "https://mvn.devos.one/releases/" } // Porting Lib Releases
     maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" } // Forge Config API Port
     maven { url = "https://maven.jamieswhiteshirt.com/libs-release" } // Reach Entity Attributes
@@ -56,6 +58,7 @@ dependencies {
 
     // Architectury API. This is optional, and you can comment it out if you don't need it.
     modImplementation "dev.architectury:architectury-forge:$rootProject.architectury_api_version"
+	implementation "org.sinytra.forgified-fabric-api:forgified-fabric-api:$rootProject.fabric_api_version"
 
 	// Create & Dependencies
     modCompileOnly("com.tterrag.registrate:Registrate:${rootProject.registrate_version}")
