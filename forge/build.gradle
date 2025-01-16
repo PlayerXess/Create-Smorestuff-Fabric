@@ -35,7 +35,7 @@ repositories {
     maven { url = "https://maven.parchmentmc.org" } // Parchment mappings
     maven { url = "https://api.modrinth.com/maven" } // LazyDFU
     maven { url = "https://maven.terraformersmc.com/releases/" } // Mod Menu
-    maven { url = "https://mvn.devos.one/snapshots/" } // Create, Porting Lib, Forge Tags, Milk Lib, Registrate
+    maven { url = "https://mvn.devos.one/#/snapshots/" } // Create, Porting Lib, Forge Tags, Milk Lib, Registrate
     maven { url = "https://mvn.devos.one/releases/" } // Porting Lib Releases
     maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" } // Forge Config API Port
     maven { url = "https://maven.jamieswhiteshirt.com/libs-release" } // Reach Entity Attributes
@@ -50,7 +50,7 @@ dependencies {
     modImplementation "dev.architectury:architectury-forge:$rootProject.architectury_api_version"
 
 	// Create - dependencies are added transitively
-	modImplementation "com.simbubi.create:create-${rootProject.create_forge_version}"
+	modImplementation("com.simibubi.create:create-${rootProject.minecraft_version}:${rootProject.create_forge_version}:slim")
 
 	// Development QOL
 	modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-forge:$rootProject.rei_forge_version"
