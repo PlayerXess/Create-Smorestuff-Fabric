@@ -16,10 +16,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.playerxess.fabric.ExampleModFabric"
+      "net.playerxess.fabric.SmorestuffFabric"
     ],
     "client": [
-      "net.playerxess.fabric.client.ExampleModFabricClient"
+      "net.playerxess.fabric.client.SmorestuffFabricClient"
     ]
   },
   "mixins": [
